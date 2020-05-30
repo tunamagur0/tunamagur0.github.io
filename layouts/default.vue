@@ -1,9 +1,20 @@
 <template>
   <div>
+    <Header />
     <nuxt />
   </div>
 </template>
 
+<script lang="ts">
+import Vue from 'vue';
+import Header from '~/components/Header.vue';
+
+export default Vue.extend({
+  components: {
+    Header
+  }
+});
+</script>
 <style>
 html {
   font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
