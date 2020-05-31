@@ -11,7 +11,7 @@ export default {
       {
         hid: 'description',
         name: 'description',
-        content: process.env.npm_package_description || ''
+        content: 'tunamagur0が作ったものを載せています。'
       }
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
@@ -34,7 +34,13 @@ export default {
   buildModules: [
     '@nuxt/typescript-build',
     // Doc: https://github.com/nuxt-community/nuxt-tailwindcss
-    '@nuxtjs/tailwindcss'
+    '@nuxtjs/tailwindcss',
+    [
+      '@nuxtjs/google-analytics',
+      {
+        id: 'UA-167199016-1'
+      }
+    ]
   ],
   /*
    ** Nuxt.js modules

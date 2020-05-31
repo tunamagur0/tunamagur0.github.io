@@ -7,7 +7,7 @@
     >
       <div class="w-1/3 m-10 relative">
         <p class="absolute text-3xl z-10">Profile</p>
-        <nuxt-link to="profile">
+        <nuxt-link to="/profile">
           <img
             class="blur-img shadow-2xl"
             src="~/assets/img/profile.png"
@@ -17,7 +17,7 @@
       </div>
       <div class="w-1/3 m-10 relative">
         <p class="absolute text-3xl z-10">Works</p>
-        <nuxt-link to="works">
+        <nuxt-link to="/works">
           <img
             class="blur-img shadow-2xl"
             src="~/assets/img/works.png"

@@ -20,12 +20,12 @@
               <ul>
                 <li>AtCoder</li>
                 <li>- Rating：緑</li>
-                <li v-if="streak !== -1">- CurrentStreak：{{ streak }}日</li>
+                <li v-show="streak !== -1">- CurrentStreak：{{ streak }}日</li>
               </ul>
             </li>
             <li class="py-2">
               <nuxt-link
-                to="works"
+                to="/works"
                 class="text-blue-500 hover:text-blue-800 hover:underline"
                 >作ったもの</nuxt-link
               >
