@@ -108,7 +108,9 @@ export default Vue.extend({
     const response = await axios
       .get<Streak[]>('https://kenkoooo.com/atcoder/resources/streaks.json')
       .catch((err) => {
-        console.log('cannot get streaks');
+        if (err) {
+          console.log('cannot get streaks');
+        }
       });
     if (!response) return { user_id: 'tunamagur0', streak: -1 };
     const myStreakData: Streak[] = response.data.filter(

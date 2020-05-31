@@ -41,7 +41,8 @@ export default {
    */
   modules: [
     // Doc: https://axios.nuxtjs.org/usage
-    '@nuxtjs/axios'
+    '@nuxtjs/axios',
+    'nuxt-fontawesome'
   ],
   /*
    ** Axios module configuration
@@ -56,5 +57,8 @@ export default {
      ** You can extend webpack config here
      */
     // extend(config, ctx) {}
+  },
+  fontawesome: {
+    component: 'fa'
   }
 };

@@ -20,6 +20,12 @@
     <div class="w-full block flex-grow">
       <div class="text-lg sm:flex" :class="{ hidden: isClosed }">
         <nuxt-link
+          to="/"
+          class="block lg:inline-block text-teal-200 hover:text-white mr-4"
+        >
+          Top
+        </nuxt-link>
+        <nuxt-link
           to="profile"
           class="block lg:inline-block text-teal-200 hover:text-white mr-4"
         >
@@ -30,12 +36,6 @@
           class="block lg:inline-block text-teal-200 hover:text-white mr-4"
         >
           Works
-        </nuxt-link>
-        <nuxt-link
-          to="contact"
-          class="block lg:inline-block text-teal-200 hover:text-white"
-        >
-          Contact
         </nuxt-link>
       </div>
     </div>
@@ -52,18 +52,3 @@ export default Vue.extend({
   }
 });
 </script>
-<style>
-.NuxtLogo {
-  animation: 1s appear;
-  margin: auto;
-}
-
-@keyframes appear {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-</style>
