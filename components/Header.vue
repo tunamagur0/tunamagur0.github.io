@@ -26,13 +26,13 @@
           Top
         </nuxt-link>
         <nuxt-link
-          to="profile"
+          to="/profile"
           class="block lg:inline-block text-teal-200 hover:text-white mr-4"
         >
           Profile
         </nuxt-link>
         <nuxt-link
-          to="works"
+          to="/works"
           class="block lg:inline-block text-teal-200 hover:text-white mr-4"
         >
           Works

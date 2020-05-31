@@ -2,7 +2,10 @@
   <div class="flex justify-center flex-wrap">
     <!-- anywhere-paint -->
     <div class="max-w-sm rounded overflow-hidden shadow-lg m-6">
-      <a href="https://tunamagur0.github.io/anywhere-paint-sample/">
+      <a
+        href="https://tunamagur0.github.io/anywhere-paint-sample/"
+        target="_blank"
+      >
         <div class="flex justify-center p-2 hover:shadow-md">
           <img src="~/assets/img/anywhere-paint.png" alt="anywhere-paint" />
         </div>
@@ -15,21 +18,29 @@
           <a
             class="text-blue-500 hover:text-blue-800 hover:underline"
             href="https://www.npmjs.com/package/anywhere-paint"
+            target="_blank"
             >npm.js</a
           >
           よりインストールすることができます。<br />
         </div>
       </div>
       <div class="px-6 py-4">
-        <a class="px-2" href="https://www.github.com/tunamagur0/anywhere-paint"
-          ><fa :icon="faGithub"
+        <a
+          class="px-2"
+          href="https://www.github.com/tunamagur0/anywhere-paint"
+          target="_blank"
+          ><fa class="text-xl" :icon="faGithub"
         /></a>
-        <a class="px-2" href="https://www.npmjs.com/package/anywhere-paint"
-          ><fa :icon="faNpm"
+        <a
+          class="px-2"
+          href="https://www.npmjs.com/package/anywhere-paint"
+          target="_blank"
+          ><fa class="text-xl" :icon="faNpm"
         /></a>
         <a
           class="text-blue-500 hover:text-blue-800 hover:underline px-2"
           href="https://tunamagur0.github.io/anywhere-paint-sample"
+          target="_blank"
           >Sample</a
         >
       </div>
@@ -37,7 +48,10 @@
 
     <!-- anywhere-paint-sample -->
     <div class="max-w-sm rounded overflow-hidden shadow-lg m-6">
-      <a href="https://tunamagur0.github.io/anywhere-paint-sample/">
+      <a
+        href="https://tunamagur0.github.io/anywhere-paint-sample/"
+        target="_blank"
+      >
         <div class="flex justify-center p-2 hover:shadow-md">
           <img
             src="~/assets/img/anywhere-paint-sample.png"
@@ -55,7 +69,8 @@
         <a
           class="px-2"
           href="https://www.github.com/tunamagur0/anywhere-paint-sample"
-          ><fa :icon="faGithub"
+          target="_blank"
+          ><fa class="text-xl" :icon="faGithub"
         /></a>
       </div>
     </div>
@@ -63,7 +78,7 @@
     <!-- interval-timer -->
     <div class="max-w-sm rounded overflow-hidden shadow-lg m-6">
       <div class="flex justify-center p-2 hover:shadow-md">
-        <a href="https://interval-t-timer.web.app"
+        <a href="https://interval-t-timer.web.app" target="_blank"
           ><img src="~/assets/img/interval-timer.png" alt="インターバルタイマー"
         /></a>
       </div>
@@ -76,12 +91,16 @@
         </div>
       </div>
       <div class="flex px-6 py-4">
-        <a class="px-2" href="https://github.com/tunamagur0/interval-timer"
-          ><fa :icon="faGithub"
+        <a
+          class="px-2"
+          href="https://github.com/tunamagur0/interval-timer"
+          target="_blank"
+          ><fa class="text-xl" :icon="faGithub"
         /></a>
         <a
           class="text-blue-500 hover:text-blue-800 hover:underline px-2"
           href="https://interval-t-timer.web.app"
+          target="_blank"
           ><img
             src="~/assets/img/interval-timer-icon.png"
             alt="インターバルタイマー"
@@ -92,7 +111,7 @@
     <!-- 140editor -->
     <div class="max-w-sm rounded overflow-hidden shadow-lg m-6">
       <div class="flex justify-center p-2 hover:shadow-md">
-        <a href="https://editor-140.herokuapp.com"
+        <a href="https://editor-140.herokuapp.com" target="_blank"
           ><img src="~/assets/img/editor-140.png" alt="文字数チェッカー"
         /></a>
       </div>
@@ -104,8 +123,11 @@
         </div>
       </div>
       <div class="flex px-6 py-4">
-        <a class="px-2" href="https://github.com/tunamagur0/140checker"
-          ><fa :icon="faGithub"
+        <a
+          class="px-2"
+          href="https://github.com/tunamagur0/140checker"
+          target="_blank"
+          ><fa class="text-xl" :icon="faGithub"
         /></a>
       </div>
     </div>
@@ -113,7 +135,7 @@
     <!-- desktop timer -->
     <div class="max-w-sm rounded overflow-hidden shadow-lg m-6">
       <div class="flex justify-center p-2 hover:shadow-md">
-        <a href="https://github.com/tunamagur0/DesktopTimer"
+        <a href="https://github.com/tunamagur0/DesktopTimer" target="_blank"
           ><img src="~/assets/img/desktop-timer.png" alt="デスクトップクロック"
         /></a>
       </div>
@@ -124,8 +146,11 @@
         </div>
       </div>
       <div class="flex px-6 py-4">
-        <a class="px-2" href="https://github.com/tunamagur0/DesktopTimer"
-          ><fa :icon="faGithub"
+        <a
+          class="px-2"
+          href="https://github.com/tunamagur0/DesktopTimer"
+          target="_blank"
+          ><fa class="text-xl" :icon="faGithub"
         /></a>
       </div>
     </div>
@@ -133,7 +158,7 @@
     <!-- openvr driver -->
     <div class="max-w-sm rounded overflow-hidden shadow-lg m-6">
       <div class="flex justify-center p-2 hover:shadow-md">
-        <a href="https://github.com/tunamagur0/my-openvr-driver"
+        <a href="https://github.com/tunamagur0/my-openvr-driver" target="_blank"
           ><img src="~/assets/img/m5stack-openvr.gif" alt="m5stack openvr"
         /></a>
       </div>
@@ -146,8 +171,11 @@
         </div>
       </div>
       <div class="flex px-6 py-4">
-        <a class="px-2" href="https://github.com/tunamagur0/my-openvr-driver"
-          ><fa :icon="faGithub"
+        <a
+          class="px-2"
+          href="https://github.com/tunamagur0/my-openvr-driver"
+          target="_blank"
+          ><fa class="text-xl" :icon="faGithub"
         /></a>
       </div>
     </div>

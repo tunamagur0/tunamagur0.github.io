@@ -73,6 +73,7 @@
               <a
                 class="text-blue-500 hover:text-blue-800 hover:underline"
                 href="https://github.com/tunamagur0"
+                target="_blank"
                 >Github</a
               >
             </li>
@@ -80,6 +81,7 @@
               <a
                 class="text-blue-500 hover:text-blue-800 hover:underline"
                 href="https://atcoder.jp/users/tunamagur0"
+                target="_blank"
                 >AtCoder</a
               >
             </li>

@@ -60,5 +60,8 @@ export default {
   },
   fontawesome: {
     component: 'fa'
+  },
+  purgeCSS: {
+    whitelistPatterns: [/svg.*/, /fa.*/]
   }
 };
