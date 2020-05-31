@@ -1,74 +1,120 @@
 <template>
-  <div class="container">
-    <div>
-      <logo />
-      <h1 class="title">
-        portfolio
-      </h1>
-      <h2 class="subtitle">
-        My portfolio
-      </h2>
-      <div class="links">
-        <a href="https://nuxtjs.org/" target="_blank" class="button--green">
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          class="button--grey"
-        >
-          GitHub
-        </a>
+  <div class="flex justify-center">
+    <div class="w-2/3 sm:w-2/4 flex flex-col bg-gray-100">
+      <div class="text-gray-700 text-center px-4 py-2 m-2">
+        <h1 class="text-5xl font-bold">
+          Profile
+        </h1>
+      </div>
+      <div class="text-gray-700 text-left px-4 py-2 m-2 self-start">
+        <div>
+          <h2 class="text-3xl font-semibold">Infomation</h2>
+          <ul class="list-disc text-lg">
+            <li class="py-2">
+              東北大学大学院情報科学研究科修士1年
+            </li>
+            <li class="py-2">
+              出身：青森県
+            </li>
+            <li class="py-2">
+              <ul>
+                <li>AtCoder</li>
+                <li>- Rating：緑</li>
+                <li v-if="streak !== -1">- CurrentStreak：{{ streak }}日</li>
+              </ul>
+            </li>
+            <li class="py-2">
+              <nuxt-link
+                to="works"
+                class="text-blue-500 hover:text-blue-800 hover:underline"
+                >作ったもの</nuxt-link
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="text-gray-700 text-left px-4 py-2 m-2 self-start">
+        <div>
+          <h2 class="text-3xl font-semibold">Skills</h2>
+          <ul class="list-disc text-lg">
+            <li class="py-2">
+              <ul>
+                <li>JavaScript, TypeScript</li>
+                <li>- Vue.js</li>
+                <li>- React</li>
+                <li>- Firebase</li>
+              </ul>
+            </li>
+            <li class="py-2">
+              <ul>
+                <li>C++</li>
+                <li>- 競技プログラミング</li>
+              </ul>
+            </li>
+            <li class="py-2">
+              <ul>
+                <li>Python</li>
+              </ul>
+            </li>
+            <li class="py-2">
+              <ul>
+                <li>Unity, C#</li>
+                <li>- 多少使える程度</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="text-gray-700 text-left px-4 py-2 m-2 self-start">
+        <div>
+          <h2 class="text-3xl font-semibold">Accounts</h2>
+          <ul class="text-lg">
+            <li>
+              <a
+                class="text-blue-500 hover:text-blue-800 hover:underline"
+                href="https://github.com/tunamagur0"
+                >Github</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-blue-500 hover:text-blue-800 hover:underline"
+                href="https://atcoder.jp/users/tunamagur0"
+                >AtCoder</a
+              >
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>
 </template>
 
+//
 <script lang="ts">
+import axios from 'axios';
 import Vue from 'vue';
-import Logo from '~/components/Logo.vue';
+
+interface Streak {
+  // eslint-disable-next-line camelcase
+  user_id: string;
+  streak: number;
+}
+
+interface AtcoderProblems {}
 
 export default Vue.extend({
-  components: {
-    Logo
+  async asyncData(): Promise<Streak> {
+    const response = await axios
+      .get<Streak[]>('https://kenkoooo.com/atcoder/resources/streaks.json')
+      .catch((err) => {
+        console.log('cannot get streaks');
+      });
+    if (!response) return { user_id: 'tunamagur0', streak: -1 };
+    const myStreakData: Streak[] = response.data.filter(
+      (val) => val.user_id === 'tunamagur0'
+    );
+    return myStreakData[0];
   }
 });
 </script>
-
-<style>
-/* Sample `apply` at-rules with Tailwind CSS
-.container {
-  @apply min-h-screen flex justify-center items-center text-center mx-auto;
-}
-*/
-.container {
-  margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.title {
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
-}
-
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
-
-.links {
-  padding-top: 15px;
-}
-</style>
