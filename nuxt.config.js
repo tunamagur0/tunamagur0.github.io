@@ -68,6 +68,6 @@ export default {
     component: 'fa'
   },
   purgeCSS: {
-    whitelistPatterns: [/svg.*/, /fa.*/]
+    whitelistPatterns: [/svg.*/, /fa.*/, /hidden/]
   }
 };
