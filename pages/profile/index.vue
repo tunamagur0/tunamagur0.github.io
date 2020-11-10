@@ -13,6 +13,7 @@
             <li class="py-2">
               東北大学大学院情報科学研究科修士1年
             </li>
+            <li class="py-2">{{ age }}歳</li>
             <li class="py-2">
               出身：青森県
             </li>
@@ -119,6 +120,20 @@ export default Vue.extend({
       (val) => val.user_id === 'tunamagur0'
     );
     return myStreakData[0];
+  },
+  computed: {
+    age(): number {
+      const birthDay = new Date(1998, 3 - 1, 10);
+      const today = new Date();
+      const age = today.getFullYear() - birthDay.getFullYear();
+      return new Date(
+        today.getFullYear(),
+        birthDay.getMonth(),
+        birthDay.getDate()
+      ) > today
+        ? age - 1
+        : age;
+    }
   }
 });
 </script>
