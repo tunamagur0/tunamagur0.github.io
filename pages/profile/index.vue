@@ -43,7 +43,11 @@
                 <li>JavaScript, TypeScript</li>
                 <li>- Vue.js</li>
                 <li>- React</li>
-                <li>- Firebase</li>
+                <li>- Nuxt.js</li>
+                <li>- Next.js</li>
+                <li class="text-gray-500">- Firebase</li>
+                <li class="text-gray-500">- WebAssembly</li>
+                <li class="text-gray-500">- WebGL</li>
               </ul>
             </li>
             <li class="py-2">
@@ -55,12 +59,24 @@
             <li class="py-2">
               <ul>
                 <li>Python</li>
+                <li>- Flask</li>
+              </ul>
+            </li>
+            <li class="py-2">
+              <ul>
+                <li>MySQL</li>
+              </ul>
+            </li>
+            <li class="py-2">
+              <ul>
+                <li>Go</li>
+                <li>- 少し</li>
               </ul>
             </li>
             <li class="py-2">
               <ul>
                 <li>Unity, C#</li>
-                <li>- 多少使える程度</li>
+                <li>- 少し</li>
               </ul>
             </li>
           </ul>
@@ -93,7 +109,6 @@
   </div>
 </template>
 
-//
 <script lang="ts">
 import axios from 'axios';
 import Vue from 'vue';

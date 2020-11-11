@@ -75,6 +75,31 @@
       </template>
     </card>
 
+    <!-- SHIBAFU -->
+    <card>
+      <template v-slot:image>
+        <a href="https://shibafu.work" target="_blank">
+          <img src="~/assets/img/shibafu.jpg" alt="SHIBAFU"
+        /></a>
+      </template>
+      <template v-slot:title>SHIBAFU</template>
+      <template v-slot:content>
+        JPHACKS2020で開発をした、自分のこなしたタスクを経験値という形で可視化することでモチベーションの維持を助けるタスク管理アプリです。<br />
+        使用技術としては、バックエンドはFlask、MySQL、フロントエンドはNuxt.jsです。<br />
+      </template>
+      <template v-slot:icons>
+        <a class="px-2" href="https://github.com/jphacks/A_2001" target="_blank"
+          ><fa class="text-xl" :icon="faGithub"
+        /></a>
+        <a
+          class="text-blue-500 hover:text-blue-800 hover:underline px-2"
+          href="https://shibafu.work"
+          target="_blank"
+          ><img src="~/assets/img/shibafu-icon.png" alt="インターバルタイマー"
+        /></a>
+      </template>
+    </card>
+
     <!-- interval-timer -->
     <card>
       <template v-slot:image>
