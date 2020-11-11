@@ -1,31 +1,31 @@
 <template>
   <div class="flex justify-center flex-wrap">
     <!-- anywhere-paint -->
-    <div class="max-w-sm rounded overflow-hidden shadow-lg m-6">
-      <a
-        href="https://tunamagur0.github.io/anywhere-paint-sample/"
-        target="_blank"
-      >
-        <div class="flex justify-center p-2 hover:shadow-md">
-          <img src="~/assets/img/anywhere-paint.png" alt="anywhere-paint" />
-        </div>
-      </a>
-      <div class="px-6 py-4">
-        <div class="font-bold text-xl mb-2">anywhere-paint</div>
-        <div class="text-gray-700 text-base">
-          お絵かきアプリを簡単に作るためのTypeScript製ライブラリです。<br />
-          レイヤー機能やUndo,Redo機能も備えています。
-          <a
-            class="text-blue-500 hover:text-blue-800 hover:underline"
-            href="https://www.npmjs.com/package/anywhere-paint"
-            target="_blank"
-            >npm.js</a
-          >
-          よりインストールすることができます。<br />
-        </div>
-      </div>
-      <div class="px-6 py-4">
+    <card>
+      <template v-slot:image>
         <a
+          href="https://tunamagur0.github.io/anywhere-paint-sample/"
+          target="_blank"
+        >
+          <div class="flex justify-center p-2 hover:shadow-md">
+            <img src="~/assets/img/anywhere-paint.png" alt="anywhere-paint" />
+          </div>
+        </a>
+      </template>
+      <template v-slot:title>anywhere-paint</template>
+      <template v-slot:content
+        >お絵かきアプリを簡単に作るためのTypeScript製ライブラリです。<br />
+        レイヤー機能やUndo,Redo機能も備えています。
+        <a
+          class="text-blue-500 hover:text-blue-800 hover:underline"
+          href="https://www.npmjs.com/package/anywhere-paint"
+          target="_blank"
+          >npmjs.com</a
+        >
+        よりインストールすることができます。<br
+      /></template>
+      <template v-slot:icons
+        ><a
           class="px-2"
           href="https://www.github.com/tunamagur0/anywhere-paint"
           target="_blank"
@@ -42,55 +42,55 @@
           href="https://tunamagur0.github.io/anywhere-paint-sample"
           target="_blank"
           >Sample</a
-        >
-      </div>
-    </div>
+        ></template
+      >
+    </card>
 
     <!-- anywhere-paint-sample -->
-    <div class="max-w-sm rounded overflow-hidden shadow-lg m-6">
-      <a
-        href="https://tunamagur0.github.io/anywhere-paint-sample/"
-        target="_blank"
-      >
-        <div class="flex justify-center p-2 hover:shadow-md">
-          <img
-            src="~/assets/img/anywhere-paint-sample.png"
-            alt="anywhere-paint-sample"
-          />
-        </div>
-      </a>
-      <div class="px-6 py-4">
-        <div class="font-bold text-xl mb-2">anywhere-paint-sample</div>
-        <div class="text-gray-700 text-base">
-          前に挙げたTypeScript製のライブラリ（anywhere-paint）を使用したサンプルです。Reactを使用しています。
-        </div>
-      </div>
-      <div class="px-6 py-4 self-end">
+    <card>
+      <template v-slot:image>
+        <a
+          href="https://tunamagur0.github.io/anywhere-paint-sample/"
+          target="_blank"
+        >
+          <div class="flex justify-center p-2 hover:shadow-md">
+            <img
+              src="~/assets/img/anywhere-paint-sample.png"
+              alt="anywhere-paint-sample"
+            />
+          </div>
+        </a>
+      </template>
+      <template v-slot:title>anywhere-paint-sample</template>
+      <template v-slot:content>
+        前に挙げたTypeScript製のライブラリ（anywhere-paint）を使用したサンプルです。Reactを使用しています。
+      </template>
+      <template v-slot:icons>
         <a
           class="px-2"
           href="https://www.github.com/tunamagur0/anywhere-paint-sample"
           target="_blank"
           ><fa class="text-xl" :icon="faGithub"
         /></a>
-      </div>
-    </div>
+      </template>
+    </card>
 
     <!-- interval-timer -->
-    <div class="max-w-sm rounded overflow-hidden shadow-lg m-6">
-      <div class="flex justify-center p-2 hover:shadow-md">
+    <card>
+      <template v-slot:image>
         <a href="https://interval-t-timer.web.app" target="_blank"
           ><img src="~/assets/img/interval-timer.png" alt="インターバルタイマー"
         /></a>
-      </div>
-      <div class="px-6 py-4">
-        <div class="font-bold text-xl mb-2">インターバルタイマー</div>
-        <div class="text-gray-700 text-base">
-          Vue.jsを使ったインターバルタイマーです。トレーニングなどに使用できます。<br />
-          PWAにも対応しているため、スマートフォンなどにインストールすることもできます。<br />
-          アニメーションや効果音も自作しました。
-        </div>
-      </div>
-      <div class="flex px-6 py-4">
+      </template>
+      <template v-slot:title>
+        インターバルタイマー
+      </template>
+      <template v-slot:content>
+        Vue.jsを使ったインターバルタイマーです。トレーニングなどに使用できます。<br />
+        PWAにも対応しているため、スマートフォンなどにインストールすることもできます。<br />
+        アニメーションや効果音も自作しました。
+      </template>
+      <template v-slot:icons>
         <a
           class="px-2"
           href="https://github.com/tunamagur0/interval-timer"
@@ -105,87 +105,42 @@
             src="~/assets/img/interval-timer-icon.png"
             alt="インターバルタイマー"
         /></a>
-      </div>
-    </div>
-
-    <!-- 140editor -->
-    <div class="max-w-sm rounded overflow-hidden shadow-lg m-6">
-      <div class="flex justify-center p-2 hover:shadow-md">
-        <a href="https://editor-140.herokuapp.com" target="_blank"
-          ><img src="~/assets/img/editor-140.png" alt="文字数チェッカー"
-        /></a>
-      </div>
-      <div class="px-6 py-4">
-        <div class="font-bold text-xl mb-2">文字数チェッカー</div>
-        <div class="text-gray-700 text-base">
-          文字数を調べてクリップボートにコピーできるWebアプリケーションです。Vue.jsを使用しています。<br />
-          コピーする際には入力した文字列に「（oo文字）」という文字列が付与され、この文字列を文字数として含むかどうかをオプションとして選択できます。
-        </div>
-      </div>
-      <div class="flex px-6 py-4">
-        <a
-          class="px-2"
-          href="https://github.com/tunamagur0/140checker"
-          target="_blank"
-          ><fa class="text-xl" :icon="faGithub"
-        /></a>
-      </div>
-    </div>
-
-    <!-- desktop timer -->
-    <div class="max-w-sm rounded overflow-hidden shadow-lg m-6">
-      <div class="flex justify-center p-2 hover:shadow-md">
-        <a href="https://github.com/tunamagur0/DesktopTimer" target="_blank"
-          ><img src="~/assets/img/desktop-timer.png" alt="デスクトップクロック"
-        /></a>
-      </div>
-      <div class="px-6 py-4">
-        <div class="font-bold text-xl mb-2">デスクトップクロック</div>
-        <div class="text-gray-700 text-base">
-          デスクトップ上の好きな位置に配置でき、常に表示しておくことができる時計です。UWPアプリとなっており、C#でプログラミングされています。
-        </div>
-      </div>
-      <div class="flex px-6 py-4">
-        <a
-          class="px-2"
-          href="https://github.com/tunamagur0/DesktopTimer"
-          target="_blank"
-          ><fa class="text-xl" :icon="faGithub"
-        /></a>
-      </div>
-    </div>
+      </template>
+    </card>
 
     <!-- openvr driver -->
-    <div class="max-w-sm rounded overflow-hidden shadow-lg m-6">
-      <div class="flex justify-center p-2 hover:shadow-md">
+    <card>
+      <template v-slot:image>
         <a href="https://github.com/tunamagur0/my-openvr-driver" target="_blank"
           ><img src="~/assets/img/m5stack-openvr.gif" alt="m5stack openvr"
         /></a>
-      </div>
-      <div class="px-6 py-4">
-        <div class="font-bold text-xl mb-2">M5Stackを用いたOpenVRドライバ</div>
-        <div class="text-gray-700 text-base">
-          M5Stackというマイコンモジュールをトラッキングデバイスとして利用する、OpenVRのドライバです。
-          OpenVRのドライバなので、Steamのゲームにも使用する事ができます。<br />
-          現時点では3DoFとなっており、回転運動しかトラッキングできませんが、前後左右の動きもトラッキングすることを目標としています。
-        </div>
-      </div>
-      <div class="flex px-6 py-4">
-        <a
+      </template>
+      <template v-slot:title>M5Stackを用いたOpenVRドライバ</template>
+      <template v-slot:content>
+        M5Stackというマイコンモジュールをトラッキングデバイスとして利用する、OpenVRのドライバです。
+        OpenVRのドライバなので、Steamのゲームにも使用する事ができます。<br />
+        現時点では3DoFとなっており、回転運動しかトラッキングできませんが、前後左右の動きもトラッキングすることを目標としています。
+      </template>
+      <template v-slot:icons
+        ><a
           class="px-2"
           href="https://github.com/tunamagur0/my-openvr-driver"
           target="_blank"
-          ><fa class="text-xl" :icon="faGithub"
-        /></a>
-      </div>
-    </div>
+          ><fa class="text-xl" :icon="faGithub"/></a
+      ></template>
+    </card>
   </div>
 </template>
 
 <script lang="ts">
 import Vue from 'vue';
 import { faGithub, faNpm } from '@fortawesome/free-brands-svg-icons';
+import Card from '~/components/Card.vue';
+
 export default Vue.extend({
+  components: {
+    Card
+  },
   computed: {
     faGithub() {
       return faGithub;
