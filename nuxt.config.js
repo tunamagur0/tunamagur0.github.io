@@ -55,6 +55,7 @@ export default {
   modules: [
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
+    '@nuxtjs/sitemap',
     'nuxt-fontawesome'
   ],
   /*
@@ -70,6 +71,9 @@ export default {
      ** You can extend webpack config here
      */
     // extend(config, ctx) {}
+  },
+  sitemap: {
+    hostname: 'https://tunamagur0.github.io'
   },
   fontawesome: {
     component: 'fa'
