@@ -9,6 +9,10 @@ export default {
       lang: 'ja'
     },
     meta: [
+      {
+        name: 'google-site-verification',
+        content: 'si-kb7Ea9z_uHUW5Ydeqob7Qi_87MMr1q-b10XcGNfw'
+      },
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       {
