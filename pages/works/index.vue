@@ -8,7 +8,7 @@
           target="_blank"
         >
           <div class="flex justify-center p-2 hover:shadow-md">
-            <img src="~/assets/img/anywhere-paint.png" alt="anywhere-paint" />
+            <img src="~/assets/img/anywhere-paint.webp" alt="anywhere-paint" />
           </div>
         </a>
       </template>
@@ -55,7 +55,7 @@
         >
           <div class="flex justify-center p-2 hover:shadow-md">
             <img
-              src="~/assets/img/anywhere-paint-sample.png"
+              src="~/assets/img/anywhere-paint-sample.webp"
               alt="anywhere-paint-sample"
             />
           </div>
@@ -95,7 +95,7 @@
           class="text-blue-500 hover:text-blue-800 hover:underline px-2"
           href="https://shibafu.work"
           target="_blank"
-          ><img src="~/assets/img/shibafu-icon.png" alt="インターバルタイマー"
+          ><img src="~/assets/img/shibafu-icon.webp" alt="インターバルタイマー"
         /></a>
       </template>
     </card>
@@ -104,7 +104,9 @@
     <card>
       <template v-slot:image>
         <a href="https://interval-t-timer.web.app" target="_blank"
-          ><img src="~/assets/img/interval-timer.png" alt="インターバルタイマー"
+          ><img
+            src="~/assets/img/interval-timer.webp"
+            alt="インターバルタイマー"
         /></a>
       </template>
       <template v-slot:title>
@@ -127,7 +129,7 @@
           href="https://interval-t-timer.web.app"
           target="_blank"
           ><img
-            src="~/assets/img/interval-timer-icon.png"
+            src="~/assets/img/interval-timer-icon.webp"
             alt="インターバルタイマー"
         /></a>
       </template>

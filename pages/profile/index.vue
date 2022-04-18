@@ -10,9 +10,6 @@
         <div>
           <h2 class="text-3xl font-semibold">Infomation</h2>
           <ul class="list-disc text-lg">
-            <li class="py-2">
-              東北大学大学院情報科学研究科修士1年
-            </li>
             <li class="py-2">{{ age }}歳</li>
             <li class="py-2">
               出身：青森県

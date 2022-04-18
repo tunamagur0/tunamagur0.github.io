@@ -10,8 +10,8 @@
         <nuxt-link to="/profile">
           <img
             class="blur-img shadow-2xl"
-            src="~/assets/img/profile.png"
-            alt="works"
+            src="~/assets/img/profile.webp"
+            alt="profile"
           />
         </nuxt-link>
       </div>
@@ -20,7 +20,7 @@
         <nuxt-link to="/works">
           <img
             class="blur-img shadow-2xl"
-            src="~/assets/img/works.png"
+            src="~/assets/img/works.webp"
             alt="works"
           />
         </nuxt-link>
