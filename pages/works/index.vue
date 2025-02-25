@@ -75,66 +75,6 @@
       </template>
     </card>
 
-    <!-- SHIBAFU -->
-    <card>
-      <template v-slot:image>
-        <a href="https://shibafu.work" target="_blank">
-          <img src="~/assets/img/shibafu.jpg" alt="SHIBAFU"
-        /></a>
-      </template>
-      <template v-slot:title>SHIBAFU</template>
-      <template v-slot:content>
-        JPHACKS2020で開発をした、自分のこなしたタスクを経験値という形で可視化することでモチベーションの維持を助けるタスク管理アプリです。<br />
-        使用技術としては、バックエンドはFlask、MySQL、フロントエンドはNuxt.jsです。<br />
-      </template>
-      <template v-slot:icons>
-        <a class="px-2" href="https://github.com/jphacks/A_2001" target="_blank"
-          ><fa class="text-xl" :icon="faGithub"
-        /></a>
-        <a
-          class="text-blue-500 hover:text-blue-800 hover:underline px-2"
-          href="https://shibafu.work"
-          target="_blank"
-          ><img src="~/assets/img/shibafu-icon.webp" alt="インターバルタイマー"
-        /></a>
-      </template>
-    </card>
-
-    <!-- interval-timer -->
-    <card>
-      <template v-slot:image>
-        <a href="https://interval-t-timer.web.app" target="_blank"
-          ><img
-            src="~/assets/img/interval-timer.webp"
-            alt="インターバルタイマー"
-        /></a>
-      </template>
-      <template v-slot:title>
-        インターバルタイマー
-      </template>
-      <template v-slot:content>
-        Vue.jsを使ったインターバルタイマーです。トレーニングなどに使用できます。<br />
-        PWAにも対応しているため、スマートフォンなどにインストールすることもできます。<br />
-        アニメーションや効果音も自作しました。
-      </template>
-      <template v-slot:icons>
-        <a
-          class="px-2"
-          href="https://github.com/tunamagur0/interval-timer"
-          target="_blank"
-          ><fa class="text-xl" :icon="faGithub"
-        /></a>
-        <a
-          class="text-blue-500 hover:text-blue-800 hover:underline px-2"
-          href="https://interval-t-timer.web.app"
-          target="_blank"
-          ><img
-            src="~/assets/img/interval-timer-icon.webp"
-            alt="インターバルタイマー"
-        /></a>
-      </template>
-    </card>
-
     <!-- openvr driver -->
     <card>
       <template v-slot:image>
